@@ -22,12 +22,12 @@ sigma = spread.rolling(window).std()
 zscore = (spread - mu) / sigma
 
 # 3. Plot z-score with thresholds
-ax = zscore.plot(figsize=(12, 6), title='SHEL–BP Rolling Z-Score')  # pandas wrapper around plt.plot :contentReference[oaicite:0]{index=0}
-ax.axhline( 2.0, color='grey', linestyle='--')  # entry threshold :contentReference[oaicite:1]{index=1}
+ax = zscore.plot(figsize=(12, 6), title='SHEL–BP Rolling Z-Score')  # pandas wrapper around plt.plot
+ax.axhline( 2.0, color='grey', linestyle='--')  # entry threshold
 ax.axhline( 0.5, color='grey', linestyle='--')
 ax.axhline(-0.5, color='grey', linestyle='--')
 ax.axhline(-2.0, color='grey', linestyle='--')
 ax.set_xlabel('Date')
 ax.set_ylabel('Z-Score')
 plt.tight_layout()
-plt.show()  # renders the chart in most IDEs and Jupyter :contentReference[oaicite:2]{index=2}
+plt.show()  # renders the chart in most IDEs and Jupyter

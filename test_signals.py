@@ -1,5 +1,3 @@
-
-
 from signals import generate_signal
 
 # Define a set of test cases: (z-score, current position) → expected action
